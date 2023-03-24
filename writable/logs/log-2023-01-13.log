@@ -1,0 +1,72 @@
+INFO - 2023-01-13 09:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-13 09:40:16 --> mysqli_sql_exception: Unknown column 'certificates.id' in 'where clause' in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `certifi...', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `certifi...')
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `certifi...')
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(2461): CodeIgniter\Database\BaseConnection->query('UPDATE `certifi...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(395): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ci\system\Model.php(754): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ci\app\Controllers\Home.php(177): CodeIgniter\Model->update('169', Array)
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\Home->updatecertificate('169')
+#9 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-13 09:40:16 --> Unknown column 'certificates.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2461): CodeIgniter\Database\BaseConnection->query('UPDATE `certificates` SET `date` = :date:, `bank` = :bank:, `price` = :price:, `car_maker` = :car_maker:, `model` = :model:, `year` = :year:, `color` = :color:, `interior` = :interior:, `transmission` = :transmission:, `chassis_no` = :chassis_no:, `engine_no` = :engine_no:, `specification` = :specification:, `odometer` = :odometer:, `department` = :department:, `users_id` = :users_id:, `conditions` = :conditions:
+WHERE `certificates`.`id` IN :certificates.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(395): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(754): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Home.php(177): CodeIgniter\Model->update('169', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->updatecertificate('169')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 09:41:36 --> mysqli_sql_exception: Unknown column 'certificates.id' in 'where clause' in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `certifi...', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `certifi...')
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `certifi...')
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(2461): CodeIgniter\Database\BaseConnection->query('UPDATE `certifi...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(395): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ci\system\Model.php(754): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ci\app\Controllers\Home.php(178): CodeIgniter\Model->update('169', Array)
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\Home->updatecertificate('169')
+#9 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-13 09:41:36 --> Unknown column 'certificates.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2461): CodeIgniter\Database\BaseConnection->query('UPDATE `certificates` SET `date` = :date:, `bank` = :bank:, `price` = :price:, `car_maker` = :car_maker:, `model` = :model:, `year` = :year:, `color` = :color:, `interior` = :interior:, `transmission` = :transmission:, `chassis_no` = :chassis_no:, `engine_no` = :engine_no:, `specification` = :specification:, `odometer` = :odometer:, `department` = :department:, `users_id` = :users_id:, `conditions` = :conditions:
+WHERE `certificates`.`id` IN :certificates.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(395): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(754): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Home.php(178): CodeIgniter\Model->update('169', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->updatecertificate('169')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-13 09:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-13 09:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
